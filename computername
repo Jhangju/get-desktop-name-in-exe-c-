@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace computername
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string MachineName1 = Environment.MachineName;
+            string MachineName2 = System.Net.Dns.GetHostName();
+            string MachineName4 = System.Environment.GetEnvironmentVariable("COMPUTERNAME");
+
+            Console.WriteLine(MachineName1);
+
+            Console.WriteLine(MachineName2);
+
+            Console.WriteLine(MachineName4);
+            Console.ReadLine();
+        }
+    }
+}
